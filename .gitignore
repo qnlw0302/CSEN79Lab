@@ -1,0 +1,13 @@
+# Compiled binaries
+a.out
+*.o
+*.out
+
+# Output folder
+output/
+
+# macOS system file
+.DS_Store
+
+# PDF
+*.pdf
