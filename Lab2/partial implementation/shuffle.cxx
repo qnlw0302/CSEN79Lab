@@ -11,7 +11,7 @@ namespace lab2_zqin2 {
 	// implement Fisher-Yates here
 	void Deck::shuffle(void){
 		int j;
-		for(int i = 51; i >=1; --i){
+		for(int i = 52; i >=0; --i){
 			j = rand() % (i + 1);
 			std::swap(cards[i], cards[j]);
 		}
