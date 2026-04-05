@@ -5,7 +5,7 @@
 #define POKER_H
 
 // 5-card Poker
-namespace csen79 {
+namespace lab2_zqin2 {
 	class Poker {
 	public:
 		// We play only 5-card poker

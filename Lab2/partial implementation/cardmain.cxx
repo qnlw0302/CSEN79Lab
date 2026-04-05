@@ -7,7 +7,7 @@
 #include "card.h"
 
 using namespace std;
-using namespace csen79;
+using namespace lab2_zqin2;
 
 // Test program for Card
 int main(void) {

@@ -11,7 +11,7 @@
 #include "poker.h"
 
 using namespace std;
-using namespace csen79;
+using namespace lab2_zqin2;
 
 // Generate one sample hand for each rank
 void pokerHands(Poker &poker) {

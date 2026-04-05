@@ -11,7 +11,7 @@ using namespace std;
 #include "deck.h"
 
 // Deck class implementation
-namespace csen79 {
+namespace lab2_zqin2 {
 	// workhorse constructor
 	Deck::Deck(int g): next(0), guard(g) {
 		nCards = Deck::CARDS_PER_DECK;

@@ -7,7 +7,7 @@
 using namespace std;
 
 // Stand-alone Card definitions
-namespace csen79 {
+namespace lab2_zqin2 {
 
 	// initialize static const arrays
 	const char Card::Honors[] = {'J', 'Q','K', 'A'};

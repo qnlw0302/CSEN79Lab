@@ -3,16 +3,26 @@
  * Email: zqin2@scu.edu
  */
 #include <iostream>
+#include <algorithm>
 #include "card.h"
 #include "deck.h"
 
-namespace csen79 {
+namespace lab2_zqin2 {
 	// implement Fisher-Yates here
-	void Deck::shuffle(void) {}
+	void Deck::shuffle(void){
+		int j;
+		for(int i = 51; i >=1; --i){
+			j = rand() % (i + 1);
+			std::swap(cards[i], cards[j]);
+		}
+		next = 0;
+	}
 
 	// deal out one card
 	const Card &Deck::deal() {
-		return cards[0];	// replace this line with your implementation of the function.
+		if (52 - next <= guard)
+			shuffle();
+		return cards[next++];	// replace this line with your implementation of the function.
 	}
 }
 

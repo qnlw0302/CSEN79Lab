@@ -12,7 +12,7 @@
 
 using namespace std;
 
-namespace csen79 {
+namespace lab2_zqin2 {
 	const std::string Poker::RankNames[] = {
 		"High Card",	// 0
 		"Pair",			// 1

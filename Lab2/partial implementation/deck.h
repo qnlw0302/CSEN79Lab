@@ -1,7 +1,7 @@
 /*
  * CSEN 79 Lab: Poker Statistics
  */
-namespace csen79 {
+namespace lab2_zqin2 {
 	/*
 	 * Abstract one deck of playing cards, without Jokers.
 	 * "deal" function return the top of the deck.  It resuffles if

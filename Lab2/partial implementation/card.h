@@ -7,7 +7,7 @@
 // short hand to define static const varables
 
 // stand-alone Card class
-namespace csen79 {
+namespace lab2_zqin2 {
 	class Card {
 	public:
 	 	/* 
