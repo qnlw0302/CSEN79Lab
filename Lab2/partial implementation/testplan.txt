@@ -1,0 +1,25 @@
+Test Plan
+Name: Ziyi Qin
+Email: zqin2@scu.edu
+
+Card Class
+Objective: Verify every card can be constructed and displayed correctly.
+Print all 52 cards
+       Expected: Each card shows correct rank (2-10, J, Q, K, A) and suit symbol
+Card::operator int() encoding
+       Expected: Two cards with different rank/suit produce different integers
+
+shuffle() and deal()
+Objective: Deck initializes with 52 unique cards; shuffle randomizes order;
+deal returns cards one by one and auto-reshuffles at the guard threshold.
+Print fresh deck
+       Expected: 52 cards in sorted order (Spades 1-13, Hearts 1-13, ...)
+After shuffle(), deck still contains 52 unique cards
+       Expected: No duplicates, no missing cards (verified by dealing all 52)
+Two consecutive shuffles produce different orderings
+       Expected: Card at position 0 differs between the two shuffles
+deal() 52 times returns all 52 distinct cards
+       Expected: Collected set has size == 52
+deal() past the guard threshold triggers auto-reshuffle
+       Expected: No crash; dealing continues; all returned cards are valid
+

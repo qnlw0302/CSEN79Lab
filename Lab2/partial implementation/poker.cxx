@@ -56,14 +56,24 @@ namespace lab2_zqin2 {
 	}
 
 	// You are to implement these
-	bool Poker::isFlush(uint s[]) { return false; }
-	bool Poker::isQuad(uint r[]) { return false; }
-	bool Poker::isTriple(uint r[]) { return false; }
-	bool Poker::isPair(uint r[]) { return false; }
-	bool Poker::is2Pair(uint r[]) { return false; }
+	bool Poker::isFlush(uint s[]) {
+		for (int i = 0; i <= Card::Suit::CLUB; i++)
+			if (s[i] == 5) return true;
+		return false;
+	}
+
+	bool Poker::isQuad(uint r[]) { return countRank(r, 4); }
+	bool Poker::isTriple(uint r[]) { return countRank(r, 3); }
+	bool Poker::isPair(uint r[]) { return countRank(r, 2); }
+	bool Poker::is2Pair(uint r[]) {
+		int pairCount = 0;
+		for (int i = 0; i < Card::NRANKS; i++)
+			if (r[i] == 2) pairCount++;
+			return pairCount == 2;
+	}
 
 	bool Poker::countRank(uint r[], int n) {
-		for (auto i = 0; i < Card::NRANKS; i++)
+		for (int i = 0; i < Card::NRANKS; i++)
 			if (r[i] == n)
 				return true;
 		return false;
