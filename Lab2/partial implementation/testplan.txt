@@ -6,10 +6,11 @@ Card Class
 Objective: Verify every card can be constructed and displayed correctly.
 Print all 52 cards
        Expected: Each card shows correct rank (2-10, J, Q, K, A) and suit symbol
-Card::operator int() encoding
-       Expected: Two cards with different rank/suit produce different integers
+       run make pokertest first
+enter a limiation here is 50000, and output the percentatge
 
 shuffle() and deal()
+run make decktest
 Objective: Deck initializes with 52 unique cards; shuffle randomizes order;
 deal returns cards one by one and auto-reshuffles at the guard threshold.
 Print fresh deck
