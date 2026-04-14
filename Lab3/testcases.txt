@@ -1,0 +1,3 @@
+in lab3 we have A-add, L-list, X-delete, so if we change the input, for example, we change X to B, the code will terminate.
+Another case is, if we input a lits of number in name part, the output will be changed to numbers, as we know, name can not be a list a numbers
+In order to run the program, we need to first make roster test, and in order to show the txt, we can use rostertest <input.txt

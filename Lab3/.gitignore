@@ -1,0 +1,9 @@
+# Mac
+.DS_Store
+
+# PDF
+.pdf
+
+# IDE
+.vscode/
+.idea/
